@@ -7,7 +7,7 @@ What was done ?
 
 
 1. Custom User model.
-2. Views for manage all users
+2. Views for create, view, edit, delete users
 3. "Allowed" and "BizzFuzz" template tags
 4. Export to CSV
 5. Jquery Datepicker for Bithday date
