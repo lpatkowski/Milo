@@ -28,6 +28,6 @@ Installation:
 7. Python manage.py runserver
 
 Project uses Django version 1.7.1 and Django build-in migrations.
-You can find the second "Python task" in main directory: file "task2.py"
+You can find the second "Python task" in main directory: file "task2.py".
 
 
