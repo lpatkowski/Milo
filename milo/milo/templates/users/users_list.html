@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load user_tags %}
+
+
+{% block content %}
+<a href="{% url 'user-create' %}">{% trans "Create new user" %}</a>
+
+<h1>{% trans "Users" %}</h1>
+<table border="1">
+    <thead>
+        <th>{% trans "Username" %}</th>
+        <th>{% trans "Birthdate" %}</th>
+        <th>{% trans "Eligible" %}</th>
+        <th>{% trans "Random Number" %}</th>
+        <th>{% trans "BizzFuzz" %}</th>
+        <th>{% trans "Actions" %}</th>
+    </thead>
+    {% for user in users_list %}
+    <tr>
+        <td>{{user.username}}</td>
+	<td>{{user.birthday_date|date:"m/d/Y"|default:""}}</td>	
+        <td>{% user_allowed user %}</td>
+        <td>{{user.random_number|default:""}}</td>
+        <td>{% modulo user.random_number %}</td>
+        <td><a href="{% url 'user-edit' user.id %}">{% trans "Edit" %}</a> <a href="{% url 'user-delete' user.id %}">{% trans "Delete" %}</a></td>
+    </tr>
+    {% endfor %}	
+</table>
+<br/>
+<a href="{% url 'csv-list' %}" target="_blank">{% trans "CSV Export" %}</a>
+
+{% endblock %}
