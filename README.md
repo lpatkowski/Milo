@@ -20,7 +20,8 @@ Installation:
 1. Git clone from github
 2. Create a virtualenv and activate by source bin/activate
 3. Pip install requirements.txt
-4. Python manage.py sycdb
-5. Python manage.pt migrate
-6. Python manage.py runserver
+4. Set up your DB settings
+5. Python manage.py sycdb
+6. Python manage.pt migrate
+7. Python manage.py runserver
 
