@@ -17,7 +17,7 @@ What was done ?
 7. Basic templates
 8. Others
 
-Installation:
+Installation
 ====
 
 1. Git clone from github
