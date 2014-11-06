@@ -14,7 +14,8 @@ What was done ?
 4. Export to CSV
 5. jQuery Datepicker for Bithday date
 6. Unit tests
-7. Others
+7. Basic templates
+8. Others
 
 Installation:
 ====
